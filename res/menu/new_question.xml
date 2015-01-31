@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.torch2424.decisions.NewQuestion" >
+
+   
+    <item
+        android:id="@+id/finish"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/checkmark"
+        android:title="@string/action_settings"/>
+    
+
+</menu>

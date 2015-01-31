@@ -1,0 +1,57 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.torch2424.decisions.Start" >
+    
+    <TextView
+            android:id="@+id/backupText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/backuptext"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/backupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backup"
+        android:text="@string/backup"
+        android:layout_marginBottom="10dp" />
+    
+    <TextView
+            android:id="@+id/restoreText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/restoretext"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp" />
+    
+    <Button
+        android:id="@+id/restoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="restore"
+        android:text="@string/restore"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>
+
+</ScrollView>
+

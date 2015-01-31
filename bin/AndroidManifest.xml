@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.torch2424.decisions"
+    android:versionCode="5"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- Backup and restore -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- IAP For more Decisions -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/questionmark"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewQuestion"
+            android:label="@string/title_activity_new_question" >
+
+            <!-- For icon up navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.torch2424.Decisions.Start" />
+        </activity>
+        <activity
+            android:name=".Decision"
+            android:label="@string/title_activity_decision" >
+
+            <!-- For icon up navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.torch2424.Decisions.Start" />
+        </activity>
+        <activity
+            android:name=".EditDecision"
+            android:label="@string/title_activity_edit_decision" >
+
+            <!-- For icon up navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.torch2424.Decisions.Start" />
+        </activity>
+        <activity
+            android:name=".BackupSettings"
+            android:label="@string/title_activity_backup_settings" >
+
+            <!-- For icon up navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.torch2424.Decisions.Start" />
+        </activity>
+        <activity
+            android:name=".CoinFlip"
+            android:label="@string/title_activity_coin_flip" >
+
+            <!-- For icon up navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.torch2424.Decisions.Start" />
+        </activity>
+        <activity
+            android:name=".GuessNumber"
+            android:label="@string/title_activity_guess_number" >
+        </activity>
+        <activity
+            android:name=".IAP"
+            android:label="@string/title_activity_iap" >
+        </activity>
+    </application>
+
+</manifest>

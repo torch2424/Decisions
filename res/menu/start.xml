@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.torch2424.decisions.Start" >
+
+    <item
+        android:id="@+id/add_decision"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+       android:icon="@drawable/plus"
+        android:title="@string/action_settings"/>
+    
+    
+    <item
+        android:id="@+id/backuprestore"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/backuprestore"/>
+    
+    <item
+        android:id="@+id/getmoredecisions"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/getmoredecisions"/>
+    
+    <item
+        android:id="@+id/coinflip"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/coinflip"/>
+    
+     <item
+        android:id="@+id/guessnumber"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/guessnumber"/>
+
+</menu>

@@ -1,0 +1,100 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.torch2424.decisions.NewQuestion" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:text="@string/newquestion"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <EditText
+        android:id="@+id/editQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/editquestion" 
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:text="@string/newdecisions"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <EditText
+        android:id="@+id/editDecisions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/editdecisions" 
+        />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+        
+     <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="undoDecision"
+        android:layout_marginRight="20dp"
+        android:text="@string/undo" />
+        
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addDecision"
+        android:layout_marginLeft="20dp"
+        android:text="@string/add" />
+    
+    
+    </LinearLayout>
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:text="@string/decisionslist"
+        android:layout_marginBottom="10dp"
+        />
+     
+     <TextView
+        android:id="@+id/decisionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:text="@string/emptystring"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>
+
+</ScrollView>
