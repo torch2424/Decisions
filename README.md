@@ -1,7 +1,7 @@
 # Decisions
 A simple decision making app for android
 
-![Decisions Img](https://files.aaronthedev.com/$/evqzh)
+![Decisions Img](https://files.aaronthedev.com/$/m9ehz)
 
 ##Submitting Pull Requests and Issues
 **Please Please Please** Submit any bugs or any fixes you would like fixed about the app. 
